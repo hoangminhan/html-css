@@ -455,8 +455,8 @@ Phân phối không gian khả dụng cho flex-item
   }
 
   .wide .row {
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -5px;
+    margin-right: -5px;
   }
 
   .wide .row.sm-gutter {
@@ -465,8 +465,8 @@ Phân phối không gian khả dụng cho flex-item
   }
 
   .wide .col {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .wide .row.sm-gutter .col {
