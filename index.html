@@ -11,6 +11,7 @@
       href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsie.css" />
   </head>
   <body>
     <div class="container">
@@ -115,10 +116,43 @@
           </ul>
         </nav>
         <div class="header__search grid wide">
-          <div class="header__search-logo">
-            <img src="./assets/imgs/shoppe.png" alt="" class="logo-img" />
+         
+          <input
+            type="checkbox"
+            name=""
+            id="check__header-menu"
+            class="show-header__menu"
+            hidden
+          />
+          <div class="header-menu">
+            <label for="check__header-menu">
+            <i class="header-menu__icon fas fa-times"></i>
+
+            </label>
+            <ul class="header-menu__list">
+              <li class="header-menu__item">Login</li>
+              <li class="header-menu__item">Register</li>
+              <li class="header-menu__item">About</li>
+            </ul>
           </div>
-          <div class="header__search-input">
+         
+
+          <label for="check__header-menu" class="overlay"></label>
+          <label for="check__header-menu" ">
+
+          <i class="header__icon-menu hidden-pc fas fa-bars"></i>
+
+          </label>
+
+          <i class="header__icon-search hidden-pc fas fa-search"></i>
+          <div class="header__search-logo">
+            <img
+              src="./assets/imgs/shoppe.png"
+              alt=""
+              class="logo-img hidden-ipad "
+            />
+          </div>
+          <div class="header__search-input hidden-mobile">
             <input
               type="text"
               name=""
@@ -240,7 +274,7 @@
       </div>
       <div class="section-content">
         <div class="row grid wide">
-          <div class="col l-2">
+          <div class="col l-2 m-0 c-0">
             <div class="category">
               <p class="category__heading">
                 <i class="category__icon fas fa-bars"></i>Danh mục
@@ -257,8 +291,8 @@
               </ul>
             </div>
           </div>
-          <div class="col l-10">
-            <div class="filter-content">
+          <div class="col l-10 m-12 c-12">
+            <div class="filter-content hidden-ipad hidden-mobile">
               <p class="filter-content__label">Sắp xếp theo</p>
               <a class="filter-content__btn">Phổ biến</a>
               <a class="filter-content__btn">Mới nhất</a>
@@ -291,9 +325,70 @@
                 </p>
               </div>
             </div>
+            <ul class="filter-product__list hidden-pc">
+              <li class="filter-product__item">
+                <a href="" class="filter-product__link">Liên quan</a>
+              </li>
+              <li class="filter-product__item filter-product__item--active">
+                <a href="" class="filter-product__link">Mới nhất</a>
+              </li>
+              <li class="filter-product__item">
+                <a href="" class="filter-product__link">Bán chạy</a>
+              </li>
+              <li class="filter-product__item">
+                <a
+                  href=""
+                  class="filter-product__link filter-product__link--hidden"
+                  >Giá</a
+                >
+              </li>
+            </ul>
+            <div class="category-mobile hidden-pc">
+              <ul class="category-mobile__list">
+                <li class="category-mobile__item">
+                  <a href="" class="category-mobile__link">Dụng aaaaaaaaaaaaaaaaaaaacụ và thiết bị tiện ích</a>
+                </li>
+                <li class="category-mobile__item">
+                  <a href="" class="category-mobile__link">Dụng cụ và thiết bị tiện ích</a>
+                </li>
+                <li class="category-mobile__item">
+                  <a href="" class="category-mobile__link">Dụng cụ và thiết bị tiện ích</a>
+                </li>
+                <li class="category-mobile__item">
+                  <a href="" class="category-mobile__link">Dụng cụ và thiết bị tiện ích</a>
+                </li>
+                <li class="category-mobile__item">
+                  <a href="" class="category-mobile__link">Dụng cụ và thiết bị tiện ích</a>
+                </li>
+                <li class="category-mobile__item">
+                  <a href="" class="category-mobile__link">Dụng cụ và thiết bị tiện ích</a>
+                </li>
+                <li class="category-mobile__item">
+                  <a href="" class="category-mobile__link">Dụng cụ và thiết bị tiện ích</a>
+                </li>
+                <li class="category-mobile__item">
+                  <a href="" class="category-mobile__link">Dụng cụ và thiết bị tiện ích</a>
+                </li>
+                <li class="category-mobile__item">
+                  <a href="" class="category-mobile__link">Dụng cụ và thiết bị tiện ích</a>
+                </li>
+                <li class="category-mobile__item">
+                  <a href="" class="category-mobile__link">Dụng cụ và thiết bị tiện ích</a>
+                </li>
+                <li class="category-mobile__item">
+                  <a href="" class="category-mobile__link">Dụng cụ và thiết bị tiện ích</a>
+                </li>
+                <li class="category-mobile__item">
+                  <a href="" class="category-mobile__link">Dụng cụ và thiết bị tiện ích</a>
+                </li>
+                <li class="category-mobile__item">
+                  <a href="" class="category-mobile__link">Dụng cụ và thiết bị tiện ích</a>
+                </li>
+              </ul>
+            </div>
             <div class="list-product">
               <div class="row">
-                <div class="col m-b-12 l-2-4">
+                <div class="col m-b-12 l-2-4 m-4 c-12">
                   <a href="" class="product-item">
                     <div
                       class="product-item__img"
@@ -355,7 +450,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col m-b-12 l-2-4">
+                <div class="col m-b-12 l-2-4 m-4 c-12">
                   <a href="" class="product-item">
                     <div
                       class="product-item__img"
@@ -417,7 +512,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col m-b-12 l-2-4">
+                <div class="col m-b-12 l-2-4 m-4 c-12">
                   <a href="" class="product-item">
                     <div
                       class="product-item__img"
@@ -479,7 +574,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col m-b-12 l-2-4">
+                <div class="col m-b-12 l-2-4 m-4 c-12">
                   <a href="" class="product-item">
                     <div
                       class="product-item__img"
@@ -541,7 +636,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col m-b-12 l-2-4">
+                <div class="col m-b-12 l-2-4 m-4 c-12">
                   <a href="" class="product-item">
                     <div
                       class="product-item__img"
@@ -603,7 +698,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col m-b-12 l-2-4">
+                <div class="col m-b-12 l-2-4 m-4 c-12">
                   <a href="" class="product-item">
                     <div
                       class="product-item__img"
@@ -665,7 +760,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col m-b-12 l-2-4">
+                <div class="col m-b-12 l-2-4 m-4 c-12">
                   <a href="" class="product-item">
                     <div
                       class="product-item__img"
@@ -727,7 +822,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col m-b-12 l-2-4">
+                <div class="col m-b-12 l-2-4 m-4 c-12">
                   <a href="" class="product-item">
                     <div
                       class="product-item__img"
@@ -789,7 +884,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col m-b-12 l-2-4">
+                <div class="col m-b-12 l-2-4 m-4 c-12">
                   <a href="" class="product-item">
                     <div
                       class="product-item__img"
@@ -851,7 +946,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col m-b-12 l-2-4">
+                <div class="col m-b-12 l-2-4 m-4 c-12">
                   <a href="" class="product-item">
                     <div
                       class="product-item__img"
